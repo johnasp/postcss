@@ -1,0 +1,26 @@
+{
+  "scripts": {
+    "build:css": "postcss src/input.css --output public/assets/css/output.css -m",
+    "watch:css": "postcss src/input.css --output public/assets/css/output.css -w -m",
+    "serve": "live-server public",
+    "format": "prettier --write .",
+    "start": "concurrently \"npm run serve\" \"npm run watch:css\" \"npm run format\""
+  },
+  "devDependencies": {
+    "@tailwindcss/forms": "^0.5.7",
+    "autoprefixer": "^10.4.16",
+    "concurrently": "^8.2.2",
+    "cssnano": "^6.0.1",
+    "live-server": "^1.2.2",
+    "postcss": "^8.2.14",
+    "postcss-assets": "^6.0.0",
+    "postcss-cli": "^10.1.0",
+    "postcss-font-pack": "^1.2.0",
+    "postcss-import": "^15.1.0",
+    "postcss-preset-env": "^9.3.0",
+    "precss": "^4.0.0",
+    "prettier": "^3.2.4",
+    "prettier-plugin-tailwindcss": "^0.5.11",
+    "tailwindcss": "^3.3.5"
+  }
+}
