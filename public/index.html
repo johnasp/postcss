@@ -283,173 +283,199 @@
           <textarea id="textarea" name="textarea" class="input"></textarea>
         </div>
 
-      <!-- Height and Weight unit forms-->
-      <div class="input-group">
-        <header class="flex justify-between">
-          <label class="label">Height</label>
-          <a class="underline">switch to metres</a>
-        </header>
+        <!-- Height and Weight unit forms-->
+        <div class="input-group">
+          <header class="flex justify-between">
+            <label class="label">Height</label>
+            <a class="underline">switch to metres</a>
+          </header>
 
-        <div class="flex gap-2">
-          <div class="relative flex-grow">
-            <input type="text" id="feet" name="feet" class="input">
-            <label for="feet" class="absolute top-1/2 right-4 transform -translate-y-1/2 text-gray-500 ">
-              feet
-            </label>
-          </div>
-          <div class="relative flex-grow">
-            <input type="text" id="feet" name="inches" class="input">
-            <label for="inches" class="absolute top-1/2 right-4 transform -translate-y-1/2 text-gray-500 ">
-              inches
-            </label>
-          </div>
-        </div>
-      </div>
-
-      <div class="input-group">
-        <header class="flex justify-between">
-          <label class="label">Weight</label>
-          <a class="underline">switch to kilograms</a>
-        </header>
-
-        <div class="flex gap-2">
-          <div class="relative flex-grow">
-            <input type="text" id="stone" name="stone" class="input">
-            <label for="stone" class="absolute top-1/2 right-4 transform -translate-y-1/2 text-gray-500 ">
-              stone
-            </label>
-          </div>
-          <div class="relative flex-grow">
-            <input type="text" id="feet" name="pounds" class="input">
-            <label for="pounds" class="absolute top-1/2 right-4 transform -translate-y-1/2 text-gray-500 ">
-              pounds
-            </label>
+          <div class="flex gap-2">
+            <div class="relative flex-grow">
+              <input type="text" id="feet" name="feet" class="input" />
+              <label
+                for="feet"
+                class="absolute right-4 top-1/2 -translate-y-1/2 transform text-gray-500"
+              >
+                feet
+              </label>
+            </div>
+            <div class="relative flex-grow">
+              <input type="text" id="feet" name="inches" class="input" />
+              <label
+                for="inches"
+                class="absolute right-4 top-1/2 -translate-y-1/2 transform text-gray-500"
+              >
+                inches
+              </label>
+            </div>
           </div>
         </div>
-      </div>
 
-      <!-- Address and postcode picker -->
-      <div class="input-group">
-        <div class="flex gap-2">
-          <label for="" class="label">Home address</label>
-          <svg class="w-5 h-auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM216 336c-13.3 0-24 10.7-24 24s10.7 24 24 24h80c13.3 0 24-10.7 24-24s-10.7-24-24-24h-8V248c0-13.3-10.7-24-24-24H216c-13.3 0-24 10.7-24 24s10.7 24 24 24h24v64H216zm40-144a32 32 0 1 0 0-64 32 32 0 1 0 0 64z"/></svg>
-        </div>
-        <div class="flex gap-4 justify-between items-baseline mb-4">
-          <input type="text" class="input" placeholder="Enter postcode">
-          <button class="button bg-primary-yellow hover:bg-primary-yellow-hover">Search</button>
-        </div>
-        <div>
-          <button class="button bg-primary-navy hover:bg-primary-navy text-white w-full">Enter address manually</button>
-        </div>
-      </div>
+        <div class="input-group">
+          <header class="flex justify-between">
+            <label class="label">Weight</label>
+            <a class="underline">switch to kilograms</a>
+          </header>
 
-      <!-- Custom Yes No Radio buttons-->
-      <div class="input-group">
-        <label for="yes-no" class="label">Customised radio buttons</label>
-      <div class="flex items-center justify-between gap-3">
-        <div class="flex-1">
-          <input
-            type="radio"
-            class="peer absolute opacity-0"
-            value="true"
-            id="true"
-            name="radioGroup"
-          />
-          <label
-            for="true"
-            class="inline-block w-full cursor-pointer self-stretch rounded border border-solid font-bold border-primary-navy p-3 text-center text-primary-sf-font peer-checked:border-none peer-checked:bg-primary-yellow peer-checked:font-bold peer-checked:text-primary-navy"
-          >
-            Yes
-          </label>
-        </div>
-
-        <div class="flex-1">
-          <input
-            type="radio"
-            class="peer absolute opacity-0"
-            value="false"
-            id="false"
-            name="radioGroup"
-          />
-          <label
-            for="false"
-            class="inline-block w-full cursor-pointer self-stretch rounded border border-solid font-bold border-primary-navy p-3 text-center text-primary-sf-font peer-checked:border-none peer-checked:bg-primary-yellow peer-checked:font-bold peer-checked:text-primary-navy"
-          >
-            No
-          </label>
+          <div class="flex gap-2">
+            <div class="relative flex-grow">
+              <input type="text" id="stone" name="stone" class="input" />
+              <label
+                for="stone"
+                class="absolute right-4 top-1/2 -translate-y-1/2 transform text-gray-500"
+              >
+                stone
+              </label>
+            </div>
+            <div class="relative flex-grow">
+              <input type="text" id="feet" name="pounds" class="input" />
+              <label
+                for="pounds"
+                class="absolute right-4 top-1/2 -translate-y-1/2 transform text-gray-500"
+              >
+                pounds
+              </label>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="input-group">
-      <div class="flex items-center justify-between gap-3">
-        <div class="flex-1">
-          <input
-            type="radio"
-            class="peer absolute opacity-0"
-            value="true"
-            id="ddCollectionDate-1"
-            name="radioGroup"
-          />
-          <label
-            for="ddCollectionDate-1"
-            class="inline-block w-full cursor-pointer self-stretch rounded border border-solid font-bold border-primary-navy p-3 text-center text-primary-sf-font peer-checked:border-none peer-checked:bg-primary-yellow peer-checked:font-bold peer-checked:text-primary-navy"
-          >
-            1st
-          </label>
+
+        <!-- Address and postcode picker -->
+        <div class="input-group">
+          <div class="flex gap-2">
+            <label for="" class="label">Home address</label>
+            <svg
+              class="h-auto w-5"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+            >
+              <path
+                d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM216 336c-13.3 0-24 10.7-24 24s10.7 24 24 24h80c13.3 0 24-10.7 24-24s-10.7-24-24-24h-8V248c0-13.3-10.7-24-24-24H216c-13.3 0-24 10.7-24 24s10.7 24 24 24h24v64H216zm40-144a32 32 0 1 0 0-64 32 32 0 1 0 0 64z"
+              />
+            </svg>
+          </div>
+          <div class="mb-4 flex items-baseline justify-between gap-4">
+            <input type="text" class="input" placeholder="Enter postcode" />
+            <button
+              class="button bg-primary-yellow hover:bg-primary-yellow-hover"
+            >
+              Search
+            </button>
+          </div>
+          <div>
+            <button
+              class="button w-full bg-primary-navy text-white hover:bg-primary-navy"
+            >
+              Enter address manually
+            </button>
+          </div>
         </div>
 
-                <div class="flex-1">
-          <input
-            type="radio"
-            class="peer absolute opacity-0"
-            value="true"
-            id="ddCollectionDate-8"
-            name="radioGroup"
-          />
-          <label
-            for="ddCollectionDate-8"
-            class="inline-block w-full cursor-pointer self-stretch rounded border border-solid font-bold border-primary-navy p-3 text-center text-primary-sf-font peer-checked:border-none peer-checked:bg-primary-yellow peer-checked:font-bold peer-checked:text-primary-navy"
-          >
-            8th
-          </label>
+        <!-- Custom Yes No Radio buttons-->
+        <div class="input-group">
+          <label for="yes-no" class="label">Customised radio buttons</label>
+          <div class="flex items-center justify-between gap-3">
+            <div class="flex-1">
+              <input
+                type="radio"
+                class="peer absolute opacity-0"
+                value="true"
+                id="true"
+                name="radioGroup"
+              />
+              <label
+                for="true"
+                class="text-primary-sf-font inline-block w-full cursor-pointer self-stretch rounded border border-solid border-primary-navy p-3 text-center font-bold peer-checked:border-none peer-checked:bg-primary-yellow peer-checked:font-bold peer-checked:text-primary-navy"
+              >
+                Yes
+              </label>
+            </div>
+
+            <div class="flex-1">
+              <input
+                type="radio"
+                class="peer absolute opacity-0"
+                value="false"
+                id="false"
+                name="radioGroup"
+              />
+              <label
+                for="false"
+                class="text-primary-sf-font inline-block w-full cursor-pointer self-stretch rounded border border-solid border-primary-navy p-3 text-center font-bold peer-checked:border-none peer-checked:bg-primary-yellow peer-checked:font-bold peer-checked:text-primary-navy"
+              >
+                No
+              </label>
+            </div>
+          </div>
         </div>
+        <div class="input-group">
+          <div class="flex items-center justify-between gap-3">
+            <div class="flex-1">
+              <input
+                type="radio"
+                class="peer absolute opacity-0"
+                value="true"
+                id="ddCollectionDate-1"
+                name="radioGroup"
+              />
+              <label
+                for="ddCollectionDate-1"
+                class="text-primary-sf-font inline-block w-full cursor-pointer self-stretch rounded border border-solid border-primary-navy p-3 text-center font-bold peer-checked:border-none peer-checked:bg-primary-yellow peer-checked:font-bold peer-checked:text-primary-navy"
+              >
+                1st
+              </label>
+            </div>
 
-        <div class="flex-1">
-          <input
-            type="radio"
-            class="peer absolute opacity-0"
-            value="false"
-            id="ddCollectionDate-16"
-            name="radioGroup"
-          />
-          <label
-            for="ddCollectionDate-16"
-            class="inline-block w-full cursor-pointer self-stretch rounded border border-solid font-bold border-primary-navy p-3 text-center text-primary-sf-font peer-checked:border-none peer-checked:bg-primary-yellow peer-checked:font-bold peer-checked:text-primary-navy"
-          >
-            16th
-          </label>
+            <div class="flex-1">
+              <input
+                type="radio"
+                class="peer absolute opacity-0"
+                value="true"
+                id="ddCollectionDate-8"
+                name="radioGroup"
+              />
+              <label
+                for="ddCollectionDate-8"
+                class="text-primary-sf-font inline-block w-full cursor-pointer self-stretch rounded border border-solid border-primary-navy p-3 text-center font-bold peer-checked:border-none peer-checked:bg-primary-yellow peer-checked:font-bold peer-checked:text-primary-navy"
+              >
+                8th
+              </label>
+            </div>
+
+            <div class="flex-1">
+              <input
+                type="radio"
+                class="peer absolute opacity-0"
+                value="false"
+                id="ddCollectionDate-16"
+                name="radioGroup"
+              />
+              <label
+                for="ddCollectionDate-16"
+                class="text-primary-sf-font inline-block w-full cursor-pointer self-stretch rounded border border-solid border-primary-navy p-3 text-center font-bold peer-checked:border-none peer-checked:bg-primary-yellow peer-checked:font-bold peer-checked:text-primary-navy"
+              >
+                16th
+              </label>
+            </div>
+
+            <div class="flex-1">
+              <input
+                type="radio"
+                class="peer absolute opacity-0"
+                value="false"
+                id="ddCollectionDate-24"
+                name="radioGroup"
+              />
+              <label
+                for="ddCollectionDate-24"
+                class="text-primary-sf-font inline-block w-full cursor-pointer self-stretch rounded border border-solid border-primary-navy p-3 text-center font-bold peer-checked:border-none peer-checked:bg-primary-yellow peer-checked:font-bold peer-checked:text-primary-navy"
+              >
+                24th
+              </label>
+            </div>
+          </div>
         </div>
-
-        <div class="flex-1">
-          <input
-            type="radio"
-            class="peer absolute opacity-0"
-            value="false"
-            id="ddCollectionDate-24"
-            name="radioGroup"
-          />
-          <label
-            for="ddCollectionDate-24"
-            class="inline-block w-full cursor-pointer self-stretch rounded border border-solid font-bold border-primary-navy p-3 text-center text-primary-sf-font peer-checked:border-none peer-checked:bg-primary-yellow peer-checked:font-bold peer-checked:text-primary-navy"
-          >
-            24th
-          </label>
-        </div>
-    </div>
-
-      </div>
-
       </section>
-
     </main>
   </body>
+</html>
